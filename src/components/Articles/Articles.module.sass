@@ -1,0 +1,32 @@
+@import './../../utils/vars'
+.articles
+    background-color: #F4F8FF
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 126px 0 150px 0
+    
+    .h2
+        @include h2_accent
+        text-align: center
+        margin-bottom: 96px
+        
+        &::after
+            content: ""
+            width: 50px
+            height: 3px
+            background-color: $accent-yellow
+            position: absolute
+            left: 50% - (25/1300)*100%
+            bottom: -23px
+    
+    .article_list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 20px
+
+    @media(max-width: 1400px)
+        .articles
+        .article_list
+            grid-template-columns: 1fr
+            grid-gap: 40px

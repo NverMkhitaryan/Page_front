@@ -1,0 +1,31 @@
+@import './../../utils/vars'
+.books
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #f5f5f5
+    padding: 126px 0px 150px 0px
+
+    .wrap
+        .h2
+            @include h2_accent
+            text-align: center
+            &::after
+                content: ""
+                width: 50px
+                height: 3px
+                background-color: $accent-yellow
+                position: absolute
+                left: 50%
+                bottom: -23px
+        .library
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 48px
+            align-items: center
+            margin-top: 70px
+@media (max-width: 1400px)
+    .books
+        .wrap
+            .library
+                grid-template-columns: 1fr

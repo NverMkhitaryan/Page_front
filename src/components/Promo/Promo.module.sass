@@ -1,0 +1,19 @@
+@import './../../utils/vars'
+.promo
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $accent-blue
+    padding: 100px 0
+
+    .wrap
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 4.5vw
+        align-items: center
+
+@media (max-width: 1400px)
+    .promo
+        .wrap
+            grid-template-columns: 1fr
+

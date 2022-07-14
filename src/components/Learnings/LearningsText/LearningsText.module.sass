@@ -1,0 +1,10 @@
+@import './../../../utils/vars'
+.learnings_text
+    display: grid
+    grid-template-columns: repeat(2, 303px)
+    grid-template-rows: repeat(2, 272px)
+    grid-gap: 30px
+@media(max-width: 600px)
+    .learnings_text
+        grid-template-columns: 303px
+        justify-content: center
